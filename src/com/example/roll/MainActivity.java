@@ -1,9 +1,15 @@
 package com.example.roll;
 
-import android.support.v7.app.ActionBarActivity;
+
+
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -14,14 +20,24 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main2);
         
         
+        Button cRoll = (Button)findViewById(R.id.cRollBut);
+        Button meleeBut = (Button)findViewById(R.id.meleeBut);
+        Button shootBut = (Button)findViewById(R.id.shootBut);
+        Button scatterBut = (Button)findViewById(R.id.scatterBut);
         
+        ImageView settings = (ImageView)findViewById(R.id.settings);        
         
-        
-        
-        
-        
-        
-        
+        cRoll.setOnClickListener(new View.OnClickListener() {
+        	
+        	@Override
+        	public void onClick(View v){
+        	
+        		Intent intent = new Intent(MainActivity.this, CustomDice.class);
+        		startActivity(intent);
+        		
+        	}
+        	
+        });
         
         
         

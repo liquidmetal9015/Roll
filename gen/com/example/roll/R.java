@@ -1112,7 +1112,6 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f050041;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int meleeBut=0x7f05003f;
@@ -1134,6 +1133,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
+        public static final int settings=0x7f050041;
         public static final int shootBut=0x7f05003e;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;

@@ -42,7 +42,7 @@
         android:text="Scatter Dice" />
 
     <ImageView
-        android:id="@+id/imageView1"
+        android:id="@+id/settings"
         android:layout_width="553dp"
         android:layout_height="55dp"
         android:layout_weight="0.99"
