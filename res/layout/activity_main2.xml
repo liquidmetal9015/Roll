@@ -14,6 +14,13 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.89"
+        android:text="Roll Dice" />
+
+    <Button
         android:id="@+id/cRollBut"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

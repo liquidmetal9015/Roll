@@ -5,58 +5,49 @@ import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CustomDice extends ActionBarActivity {
+public class ScatterAttack extends ActionBarActivity {
 	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.custom_roll);
+		setContentView(R.layout.scatter_die);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		
-		
 		
 		Button go = (Button)findViewById(R.id.button1);
 		
 		
 		
-		
-		
-		
-		
 		go.setOnClickListener(new View.OnClickListener() {
 			
-			TextView result = (TextView)findViewById(R.id.textView4);
-        	EditText Dice = (EditText)findViewById(R.id.editText1);
-        	EditText Sucess = (EditText)findViewById(R.id.editText2);
+			TextView result = (TextView)findViewById(R.id.textView2);
+        	ImageView arrow = (ImageView)findViewById(R.id.imageView1);
         	
         	@Override
         	public void onClick(View v){
+        		
+        		
+        		if(AppUtils.roll() >= 5){
+        			arrow.setRotation(0);
+        			arrow.setImageResource(R.drawable.target);
+        			result.setText("Hit!!!!!!");
+        			
+        		}else {
+        			arrow.setImageResource(R.drawable.arrow);
+        	arrow.setRotation((int)Math.ceil(Math.random()*360));	
         	
+        	int rolls = AppUtils.roll() + AppUtils.roll();
         		
-        		String input = Dice.getText().toString();
-        		int in = Integer.parseInt(input);
+        		result.setText("Roll Result: " + rolls);
         		
-        		
-        		String success = Sucess.getText().toString();
-        		int goodDice = Integer.parseInt(success);
-        		
-        		
-        		int sucessRolls = AppUtils.test(goodDice,in);
-        		result.setText(sucessRolls + " sucessful rolls \n " + (in-sucessRolls) + " failed rolls");
-        		
-        		
-        		
+        		}
         		
         	}
         	
         });
-		
-		
 		
 	}
 /*

@@ -24,6 +24,7 @@ public class MainActivity extends ActionBarActivity {
         Button meleeBut = (Button)findViewById(R.id.meleeBut);
         Button shootBut = (Button)findViewById(R.id.shootBut);
         Button scatterBut = (Button)findViewById(R.id.scatterBut);
+        Button rollBut = (Button)findViewById(R.id.button1);
         
         ImageView settings = (ImageView)findViewById(R.id.settings);        
         
@@ -39,7 +40,54 @@ public class MainActivity extends ActionBarActivity {
         	
         });
         
+        meleeBut.setOnClickListener(new View.OnClickListener() {
+        	
+        	@Override
+        	public void onClick(View v){
+        	
+        		Intent intent = new Intent(MainActivity.this, MeleeAttack.class);
+        		startActivity(intent);
+        		
+        	}
+        	
+        });
         
+        rollBut.setOnClickListener(new View.OnClickListener() {
+        	
+        	@Override
+        	public void onClick(View v){
+        	
+        		Intent intent = new Intent(MainActivity.this, RollDice.class);
+        		startActivity(intent);
+        		
+        	}
+        	
+        });
+        
+        
+        shootBut.setOnClickListener(new View.OnClickListener() {
+        	
+        	@Override
+        	public void onClick(View v){
+        	
+        		Intent intent = new Intent(MainActivity.this, ShootAttack.class);
+        		startActivity(intent);
+        		
+        	}
+        	
+        });
+        
+        scatterBut.setOnClickListener(new View.OnClickListener() {
+        	
+        	@Override
+        	public void onClick(View v){
+        	
+        		Intent intent = new Intent(MainActivity.this, ScatterAttack.class);
+        		startActivity(intent);
+        		
+        	}
+        	
+        });
         
         
     }
