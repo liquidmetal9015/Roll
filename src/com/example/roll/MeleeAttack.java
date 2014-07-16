@@ -9,6 +9,22 @@ import android.view.MenuItem;
 public class MeleeAttack extends ActionBarActivity {
 	
 	
+	private static int[][] melee = {{4,4,5,5,5,5,5,5,5,5},
+									{3,4,4,4,5,5,5,5,5,5},
+									{3,3,4,4,4,4,5,5,5,5},
+									{3,3,3,4,4,4,4,4,5,5},
+									{3,3,3,3,4,4,4,4,4,4},
+									{3,3,3,3,3,4,4,4,4,4},
+									{3,3,3,3,3,3,4,4,4,4},
+									{3,3,3,3,3,3,3,4,4,4},
+									{3,3,3,3,3,3,3,3,4,4},
+									{3,3,3,3,3,3,3,3,3,4}
+	
+	};
+	
+	
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

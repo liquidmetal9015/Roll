@@ -1,20 +1,39 @@
 package com.example.roll;
 
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class ShootAttack extends ActionBarActivity {
+	
+	
+	
+	private static int[][] wound = {{4,5,6,6,7,7,7,7,7,7},
+									{3,4,5,6,6,7,7,7,7,7},
+									{2,3,4,5,6,6,7,7,7,7},
+									{2,2,3,4,5,6,6,7,7,7},
+									{2,2,2,3,4,5,6,6,7,7},
+									{2,2,2,2,3,4,5,6,6,7},
+									{2,2,2,2,2,3,4,5,6,6},
+									{2,2,2,2,2,2,3,4,5,6},
+									{2,2,2,2,2,2,2,3,4,5},
+									{2,2,2,2,2,2,2,2,3,4}};
+	
+	
+
 	
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.shooting_attack);
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		  setContentView(R.layout.shooting_attack);
 		
+		  
+		  
+		  
 		
 		
 	}

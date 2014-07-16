@@ -1111,7 +1111,6 @@ containing a value of this type.
         public static final int editText2=0x7f050046;
         public static final int editText3=0x7f050050;
         public static final int editText4=0x7f050051;
-        public static final int editText5=0x7f05004d;
         public static final int editText6=0x7f050055;
         public static final int edit_query=0x7f050030;
         public static final int end=0x7f050013;
@@ -1122,7 +1121,7 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int imageView1=0x7f050056;
+        public static final int imageView1=0x7f050057;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
         public static final int meleeBut=0x7f050040;
@@ -1138,6 +1137,7 @@ containing a value of this type.
         public static final int roll3=0x7f05004a;
         public static final int roll3s=0x7f05004c;
         public static final int roll4=0x7f050049;
+        public static final int roll4s=0x7f05004d;
         public static final int roll5=0x7f05004f;
         public static final int roll5s=0x7f05004e;
         public static final int scatterBut=0x7f050041;
@@ -1169,7 +1169,7 @@ containing a value of this type.
         public static final int textView5=0x7f050052;
         public static final int textView6=0x7f050053;
         public static final int textView7=0x7f050054;
-        public static final int textView8=0x7f050057;
+        public static final int textView8=0x7f050056;
         public static final int textView9=0x7f05005a;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;

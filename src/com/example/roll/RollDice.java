@@ -1,10 +1,12 @@
 package com.example.roll;
 
 import android.os.Bundle;
-import android.support.v4.app.NavUtils;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class RollDice extends ActionBarActivity {
 	
@@ -14,6 +16,52 @@ public class RollDice extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.roll_dice);
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+		
+		
+		EditText input = (EditText)findViewById(R.id.editText1);
+		
+		Button go = (Button)findViewById(R.id.button1);
+		
+		TextView one = (TextView)findViewById(R.id.textView3);
+		TextView two = (TextView)findViewById(R.id.textView4);
+		TextView three = (TextView)findViewById(R.id.textView5);
+		TextView four = (TextView)findViewById(R.id.textView6);
+		TextView five = (TextView)findViewById(R.id.textView7);
+		TextView six = (TextView)findViewById(R.id.textView8);
+		
+		
+go.setOnClickListener(new View.OnClickListener() {
+			
+        	EditText input = (EditText)findViewById(R.id.editText1);
+        		
+        		Button go = (Button)findViewById(R.id.button1);
+        		
+        		TextView one = (TextView)findViewById(R.id.textView3);
+        		TextView two = (TextView)findViewById(R.id.textView4);
+        		TextView three = (TextView)findViewById(R.id.textView5);
+        		TextView four = (TextView)findViewById(R.id.textView6);
+        		TextView five = (TextView)findViewById(R.id.textView7);
+        		TextView six = (TextView)findViewById(R.id.textView8);
+        	@Override
+        	public void onClick(View v){
+        		
+        	int in = Integer.parseInt(input.getText().toString());
+        	
+        	int[] results = AppUtils.multiRoll(in);
+        		
+        	one.setText("1: " + results[0]);
+        	two.setText("2: " + results[1]);
+        	three.setText("3: " + results[2]);
+        	four.setText("4: " + results[3]);
+        	five.setText("5: " + results[4]);
+        	six.setText("6: " + results[5]);
+        		
+        	}
+		
+});
+		
+		
+		
 		
 		
 		

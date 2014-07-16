@@ -151,7 +151,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/roll4s"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -164,7 +164,7 @@
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/editText5"
+        android:layout_alignTop="@+id/roll4s"
         android:layout_toLeftOf="@+id/editText2"
         android:text="FNP"
         android:textAppearance="?android:attr/textAppearanceLarge" />
